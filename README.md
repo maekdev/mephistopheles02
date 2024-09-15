@@ -23,19 +23,20 @@ I’ve created this software, just as proof-of-concept (and due to a mix of ches
 - the graphic art / picture files to display board + pieces (for the first version I’ve used the artwork from Mame)
 
 From an educational perspective, it might though be interesting to look into my code and the analysis of the chess game memory structure, because other than the Mame based emulators, I’m using only the RAM to draw the board and piece position.
-During alpha version developent of this, I found the Mame version, but I found it very annoying when doing a wrong movement and the pieces disappear, so I was looking for a different way to do it and in my code I calculate the correct piece position, by recapitulating all the previous  movements from the initial board position. So it is always the latest state and you could also apply a custom board setup and calculate the next move.
+During alpha version developent of this, I stumbled over the Mame version, but I found it very annoying when doing a wrong movement and the pieces just disappeared, so I was looking for a different way to do it: 
+In my code I calculate the correct piece position by recapitulating all the previous movements from the initial board position. So it is always the latest state and you could also apply a custom board setup and calculate the next move.
 This is unfortunately necessary, as the actual position is not stored directly in the memory and the other emulators rely on the player to move all pieces correctly.
 
 ## NextStep
 
 I don’t plan to rework the code. For me it’s just good enough for a quick game once in a while.
 Maybe at a later step, I could bring it to another platform other than my linux machine. I would be even curious about the ELO strength of the eight levels of the Mondial2, so I was thinking of building a chess bot to find it out. 
-Automatically moving the oponents piece once the calculation is finished might also be something easy to implement...
+Automatically moving the opponents piece once the calculation is finished might also be something easy to implement...
 
 ## Comment
 
 I’ve called the project „mephistopheles02: lucifer’s life“, because when analysing the ROM-file after extraction, I found some strange blocks inside including the letters which reminded me on LUCIFER’S LIFE and many whitespaces. This could be an incident or it could also be an easter egg though I didn’t further analyse/reverse engineer.
-As for the hardware, I’ve extracted the firmware from Mephisto Mondial and Mondial2 – and especially for the latter one I have to say I’m quite impressed about the work of the original author [Frans Morsch](https://www.schach-computer.info/wiki/index.php/Morsch%2C_Frans): This guy managed to squeeze an opening dictionary and (for my player experience) a super powerful engine in just a few kB of memory & RAM. Quite impressive work...
+As for the hardware, I’ve extracted the firmware from Mephisto Mondial and Mondial2 – and especially for the latter one I have to say I’m quite impressed about the work of the original programmer [Frans Morsch](https://www.schach-computer.info/wiki/index.php/Morsch%2C_Frans): This guy managed to squeeze an opening dictionary and (for my player experience) a super powerful engine in just a few kB of memory & RAM. Quite impressive work...
 
 ## Firmware
 Howto extract the firmware / ROM:
