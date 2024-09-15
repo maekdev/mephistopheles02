@@ -30,6 +30,7 @@ This is unfortunately necessary, as the actual position is not stored directly i
 
 I don’t plan to rework the code. For me it’s just good enough for a quick game once in a while.
 Maybe at a later step, I could bring it to another platform other than my linux machine. I would be even curious about the ELO strength of the eight levels of the Mondial2, so I was thinking of building a chess bot to find it out. 
+Automatically moving the oponents piece once the calculation is finished might also be something easy to implement...
 
 ## Comment
 
