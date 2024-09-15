@@ -38,7 +38,7 @@ As for the hardware, I’ve extracted the firmware from Mephisto Mondial and Mon
 ## How to extract firmware
 For this I've opened the chess board, removed the EPROM (the one with the sticker on top) from the mainboard and connected it to an AVR to read out all data.
 This is a picture of the original hardware
-
+![Mephisto Mondial](media/mondial.jpg)
 And the circuitry inside
-
+![Mondial opened up](media/mondialopen.jpg)![Mondial PCB](media/mondialpcp.jpg)
 Here you can see the read-out taking place
