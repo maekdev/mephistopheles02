@@ -2,7 +2,7 @@
 Mephisto Mondial II chess game emulator
 
 A proof-of-concept project to play against this devil again...
-![MephRunning](https://github.com/maekdev/maekdev/blob/main/media/mephrunning.gif)
+![MephRunning](https://raw.githubusercontent.com/maekdev/maekdev/main/media/mephistopheles02/mephrunning.gif)
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -42,9 +42,9 @@ As for the hardware, I’ve extracted the firmware from Mephisto Mondial and Mon
 Howto extract the firmware / ROM:
 For this I've opened the chess board, removed the EPROM (the one with the sticker on top) from the mainboard and connected it to an AVR to read out all data.
 This is a picture of the original hardware
-![Mephisto Mondial](https://github.com/maekdev/maekdev/blob/main/media/mephistopheles02/mondial.jpg)
+![Mephisto Mondial](https://github.com/maekdev/maekdev/raw/main/media/mephistopheles02/mondial.jpg)
 And the circuitry inside
-![Mondial opened up](https://github.com/maekdev/maekdev/blob/main/media/mondialopen.jpg)
-![Mondial PCB](https://github.com/maekdev/maekdev/blob/main/media/mondialpcb.jpg)
+![Mondial opened up](https://github.com/maekdev/maekdev/raw/main/media/mephistopheles02/mondialopen.jpg)
+![Mondial PCB](https://github.com/maekdev/maekdev/raw/main/media/mephistopheles02/mondialpcb.jpg)
 Here you can see the read-out taking place
-![MondialDownload](https://github.com/maekdev/maekdev/blob/main/media/mondialdownload.gif)
+![MondialDownload](https://github.com/maekdev/maekdev/raw/main/media/mephistopheles02/mondialdownload.gif)
