@@ -2,7 +2,7 @@
 Mephisto Mondial II chess game emulator
 
 A proof-of-concept project to play against this devil again...
-![MephRunning](https://github.com/maekdev/maekdev/blob/main/mmedia/mephrunning.gif)
+![MephRunning](https://github.com/maekdev/maekdev/blob/main/media/mephrunning.gif)
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -44,7 +44,7 @@ For this I've opened the chess board, removed the EPROM (the one with the sticke
 This is a picture of the original hardware
 ![Mephisto Mondial](https://github.com/maekdev/maekdev/blob/main/media/mephistopheles02/mondial.jpg)
 And the circuitry inside
-![Mondial opened up](https://github.com/maekdev/maekdev/blob/main/mmedia/mondialopen.jpg)
-![Mondial PCB](https://github.com/maekdev/maekdev/blob/main/mmedia/mondialpcb.jpg)
+![Mondial opened up](https://github.com/maekdev/maekdev/blob/main/media/mondialopen.jpg)
+![Mondial PCB](https://github.com/maekdev/maekdev/blob/main/media/mondialpcb.jpg)
 Here you can see the read-out taking place
-![MondialDownload](https://github.com/maekdev/maekdev/blob/main/mmedia/mondialdownload.gif)
+![MondialDownload](https://github.com/maekdev/maekdev/blob/main/media/mondialdownload.gif)
