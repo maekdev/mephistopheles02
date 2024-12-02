@@ -43,7 +43,7 @@ Howto extract the firmware / ROM:
 For this I've opened the chess board, removed the EPROM (the one with the sticker on top) from the mainboard and connected it to an AVR to read out all data.
 This is a picture of the original hardware
 ![Mephisto Mondial](media/mondial.jpg)
-![TEST2](../maekdev/media/mephistopheles02/mondial.jpg)
+![TEST2](https://github.com/maekdev/maekdev/media/mephistopheles02/mondial.jpg)
 And the circuitry inside
 ![Mondial opened up](media/mondialopen.jpg)![Mondial PCB](media/mondialpcb.jpg)
 Here you can see the read-out taking place
