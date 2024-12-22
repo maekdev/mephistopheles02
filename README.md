@@ -1,8 +1,11 @@
-# mephisto02
+# mephisto02 (main branch) -- work in progress
 Mephisto Mondial II chess game emulator
 
 A proof-of-concept project to play against this devil again...
 ![MephRunning](https://raw.githubusercontent.com/maekdev/maekdev/main/media/mephistopheles02/mephrunning.gif)
+
+This is the main branch, with the latest and most complete features.
+Some more information can be found in the legacy branch.
 
 ## Table of Contents
 - [Introduction](#introduction)
