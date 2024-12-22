@@ -6,6 +6,7 @@ RM = @rm -rf
 ECHO = @echo
 STRIP = @strip
 AR = @ar
+MKDIR = @mkdir
 
 # Compiler and linker flags
 INC = -I$(SRC_DIR)
@@ -21,7 +22,7 @@ DEF = -D_M6502
 # choose to include rom.h
 #DEF += -D_BUILTINROM
 # enable DEBUG Options (uncomment to enable)
-#DEF += -D_DEBUG
+DEF += -D_DEBUG
 
 # Directories for sources, objects, and binaries
 SRC_DIR = src
@@ -76,6 +77,11 @@ backup: clean
 	@tar czf $(BACKUPDIR)/`date +"%y%m%d_%H%M"`_`pwd | rev | cut -f1 -d'/' - | rev`.tar.gz *
 	$(ECHO) "Backup stored in target folder."
 
+# Create directories
+.PHONY: directories
+directories:
+	$(MKDIR) -p $(OBJ_DIR) $(BIN_DIR)
+
 # Rule to compile .c files to .o files (in the obj directory)
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
 	$(ECHO) "=== compiling ($<) ==="
@@ -101,15 +107,6 @@ libs:
 
 libclean:
 	$(MAKE) -C $(LIB_DIR) clean "RM=$(RM)" "ECHO=$(ECHO)"
-
-#$(LIB_DIR)/libminiz.a: 
-#	$(MAKE) -C $(LIB_DIR) libminiz.a CC=$(CC) ECHO=$(ECHO)
-#
-#$(LIB_DIR)/libminiz.a: 
-#	$(MAKE) -C $(LIB_DIR) lib6502.a CC=$(CC) ECHO=$(ECHO)
-#
-#$(LIB_DIR)/libminiz.a: 
-#	$(MAKE) -C $(LIB_DIR) libvrEmu6502.a CC=$(CC) ECHO=$(ECHO)
 
 # Link the object files into the final binary (in the bin directory)
 $(BIN): $(OBJ)
