@@ -1,7 +1,7 @@
 # mephisto02
 Mephisto Mondial II chess game emulator (revised version)
 
-An emulator for the popular chess game, which allows you to play Mephisto again...
+An emulator for the popular 90s chess computer, which allows you to play Mephisto again...
 ![MephRunning](https://raw.githubusercontent.com/maekdev/maekdev/main/media/mephistopheles02/mephX_run.gif)
 
 ## Table of Contents
@@ -15,25 +15,27 @@ This is a emulator for the [Mephisto Mondial II](https://www.schach-computer.inf
 
 If you are interested in retro chess gaming, check out [Franz Huber’s CB-Emu compilation](https://fhub.jimdofree.com/) which is based on Mame and contains a lot of the old platforms - including the Mondial2 and plenty of ROM binaries.
 
-I’ve started this project several years ago, just as proof-of-concept (and due to a mix of chess nostalgy & mental boredom during the pandemic situation). I've decided to rework the code and make it compilable and accessible, so in this branch you find the upgraded version of the code including many improvements you'd expect from chess programs these days.
+I’ve started this project several years ago, just as proof-of-concept (and due to a mix of chess nostalgy & mental boredom during the pandemic situation). I've decided to rework and release the code. 
+In this branch you find the upgraded version of the code including many improvements you'd expect from chess programs these days.
 
 During alpha version developent of this, I stumbled over the Mame version, but I found it very annoying when doing a wrong movement and the pieces just disappeared, so I was looking for a different way to do it: 
-In my code I calculate the correct piece position by recapitulating all the previous movements from the initial board position. So it is always the latest state and you could also apply a custom board setup and calculate the next move.
+In my code I calculate the correct piece position by recapitulating all the previous movements from the initial board position. 
 This is unfortunately necessary, as the actual position is not stored directly in the memory and the other emulators rely on the player to move all pieces correctly.
 
 ## Installation
 
 IMPORTANT: This code does not contain a ROM file. 
-If you want to extract the ROM from real hardware, check out the legacy branch of this git, which contains AVR code + some instructions how to do this.
+If you want to extract the ROM from real hardware, check out the legacy branch of this git repository, which contains AVR code + some instructions how to do this.
 Otherwise, you can easily find some downloads in the web for the original file.
 
-Windows: No installation required. Just get the mondial2 rom file and put it into the same folder as the executable.
+Windows users: No installation required. Just get the mondial2 rom file and put it into the same folder as the executable.
 
-Linux: just run make libs and make and make run (I might build an AUR package once for ARCH Linux someday)
-'''bash
+Linux users: just run make libs and make and make run (I might build an AUR package for ARCH Linux someday)
+```bash
 make libs
 make
 ./bin/meph
+```
 
 ## Comment
 
